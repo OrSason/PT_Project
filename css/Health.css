@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    margin: auto;
+    width: fit-content;
+}
+.col{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:transparent;
+}
+
+ /* רקע כולל */ 
+#background{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url('../images/background4.jpg') repeat 
+    center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:auto; 
+}
+#welcome{
+    font-family: Candara;
+    text-align: center;
+    text-decoration: underline 2px double;
+    width:40%;
+    margin: 0 auto;
+    font-size: 40px;
+
+}
+/* הדף עם התוכן */
+#page{
+    width: 100%;
+    margin: 0 auto;
+    border: 10px solid;
+    border-radius: 50px;
+    border-style: ridge double;
+    border-color: rgb(126, 132, 173);
+    background-image: url('../images/background.jpg');
+}
+
+/* תמונת לוגו */
+#logo{
+   margin: auto;
+   width: fit-content;
+   border: 5px solid transparent;
+   border-radius: 25%;
+   border-style:  double;
+}
+/* שורת לינקים */
+#nav{
+    border: 5px ;
+    border-color: rgb(126, 132, 173);
+    border-radius: 10px;
+    border-style: double;
+}
+#stickyNavbar{
+    background-image: url('../images/background.jpg');
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-style: ridge;
+    border-bottom-color: rgb(126, 132, 173);
+}
+
+/* מרכז הדף */
+
+/* שורת כתבות */
+#articles{
+    margin: auto;
+}
+
+/* לוגו כתבות */
+#articleslogo{
+    border-top: ridge 4px grey;
+    border-bottom: ridge 4px grey;
+}
+
+/* מסגרת כתבות */
+#card{
+    border: 5px solid gray;
+    border-style:  double;
+    width: 230px;
+    margin: auto;
+    text-align: center;  
+}
+
+@media screen and (max-width:1350px){
+    #card{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    #card{
+        width: 300px;
+    }
+}
+
+#backgroundArticle{
+    background-color: rgba(208, 218, 245, 0.171);
+    font-size: 90% ;
+    font-weight: bold;
+}
+
+.featured li{
+    display:block; 
+    height:238px; 
+    margin-bottom:10px; 
+    margin-right:10px; 
+    position:relative; 
+}
+.featured li img{
+    width:100%; 
+    height:100%
+}
+.featured li:hover .title_caption{
+    height:130px; 
+    padding-top:15%
+}
+.title_caption{
+    position:absolute; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    padding:10px;
+    height: 50px; 
+    background-color:rgba(0, 0, 0, 0.705); 
+    -webkit-transition:all 0.5s; 
+    -moz-transition:all 0.5s; 
+    -ms-transition:all 0.5s; 
+    -o-transition:all 0.5s; 
+    transition:all 0.5s
+}
+.featured li a{
+    font-size:20px; 
+    color:#fff;
+    font-family:Calibri;    
+ 
+}
+
+#bmi{
+    box-shadow: 2px 2px 10px 5px gray;
+    border-radius: 10px;
+
+}
+#bmi:hover{
+    box-shadow: 2px 2px 10px 10px rgb(34, 32, 32);
+}
+
+/* Footer */
+#footer_text{
+    text-align: center;
+    font-size: 12px; 
+}
+#row5{
+    margin: auto;
+    margin-top: -2%;
+    margin-bottom: -2%;
+}
+.social-menu ul{
+    position:absolute; 
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;   
+    margin: 10px;
+}
+.social-menu ul li .fa{
+    font-size: 25px;
+    line-height: 50px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
+}
+.social-menu ul li .fa:hover{
+    color: rgb(10, 7, 7);
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.938);
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social-menu ul li a:hover{
+    transform: translate(0, 5px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(5) a:hover{
+    background-color: #25D366;
+}
