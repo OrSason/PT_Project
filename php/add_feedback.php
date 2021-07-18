@@ -1,9 +1,9 @@
 <?php
 
-    $DB_Host = "localhost";
-    $DB_User = "shayfe_easport";
-    $DB_Pass = "shay!eyal@asaf#";
-    $DB_Name = "shayfe_web_project";
+$DB_Host = "localhost";
+$DB_User = "admin1234";
+$DB_Pass = "pass1234";
+$DB_Name = "PT_project";
 
     // Create connection
     $conn = new mysqli($DB_Host, $DB_User, $DB_Pass, $DB_Name);

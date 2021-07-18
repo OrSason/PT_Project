@@ -1,6 +1,6 @@
 <?php
     require_once('../php/init.php');
-    session_start();
+    //session_start();
     
     if (!$database->get_connection()){
        die("Conncection failed.");

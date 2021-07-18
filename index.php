@@ -32,7 +32,7 @@
             if (!$error){
                 echo "<script>alert('work');</script>"; 
                 $session->login($user);
-                header('Location: ../PHP_Project/includes/HomePage.php');
+                header('Location: ../PT_Project/includes/HomePage.php');
             }
             else{
                 echo "<script>alert('Login Faild.. Invaild UserName or Password.');</script>"; 
@@ -54,7 +54,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../PHP_Project/css/Login.css">
+    <link rel="stylesheet" href="../PT_Project/css/Login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -64,7 +64,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         function signup(){
-            window.location='../PHP_Project/includes/SignUp.php';
+            window.location='../PT_Project/includes/SignUp.php';
 
         }
     </script>
@@ -75,7 +75,7 @@
 <section id="main">
 <form method="POST">
   <div class="imgcontainer">
-      <img class="img-fluid" src="../PHP_Project/images/logo2.jpeg" alt="Avatar" width="300" height="100">
+      <img class="img-fluid" src="../PT_Project/images/logo2.jpeg" alt="Avatar" width="300" height="100">
   </div>
 
   <div class="container">
