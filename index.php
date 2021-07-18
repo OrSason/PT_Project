@@ -1,9 +1,9 @@
 
 <?php
-    require_once('../PHP_Project/php/init.php');
+    require_once('../PT_Project/php/init.php');
     global $session;
     if ($session->signed_in){
-        header('Location: ../PHP_Project/includes/HomePage.php');
+        header('Location: ../PT_Project/includes/HomePage.php');
         exit;
     }
     $error='';
