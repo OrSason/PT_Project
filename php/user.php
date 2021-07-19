@@ -64,6 +64,22 @@ class User{
         
     }
 
+
+
+    public static function delete_user($user_name){
+        global $database;
+        $error=null;                                                                                                                    
+        $result=$database->query("delete from users where user_name='".$user_name."'");
+		
+        if (!$result)
+            $error='Can not find the user.  Error is:'.$database->get_connection()->error;
+        else
+            $error="Can no find user by this name";
+		 
+        return $error;
+        
+    }
+
     public static function add_user($user_name, $password, $age, $living_area, $sport, $time_activity){
         global $database;
         $error=null;
