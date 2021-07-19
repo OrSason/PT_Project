@@ -52,12 +52,29 @@
             
             <div id="welcome" style="">
                 <?php
-                    echo "Hello " .$_SESSION['user_name'];
+                    
+                    
+                    
+
+                    if ($_SESSION['isAdmin'] == "1") {
+
+                      echo "Welcome Admin " .$_SESSION['user_name']; 
+
+                      echo '<a href="../php/AdminPanel.php"><input class="btn btn-outline-dark" type="button" value="Admin Panel" style="margin-left: 30px;"></a>';
+                    }
+                    else{
+
+                      echo "Hello " .$_SESSION['user_name'];
+                    }
+
+
                 ?>
 
                 <a href="../php/Logout.php"><input class="btn btn-outline-dark" type="button" value="logout" style="margin-left: 30px;"></a>
+               
                 
-             </div>
+             
+              </div>
           
         </header>
 

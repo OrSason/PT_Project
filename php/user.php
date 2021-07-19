@@ -10,6 +10,7 @@ class User{
     public $living_area;
     public $sport;
     public $time_activity;
+    private $isAdmin;
     
 
     public static function fetch_users(){

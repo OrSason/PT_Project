@@ -5,6 +5,7 @@ require_once('init.php');
 class Session{
     private $signed_in;
     private $user_name;
+    private $isAdmin;
     
     
 
@@ -28,6 +29,7 @@ class Session{
         if($user){
             $this->user_name=$user->user_name;
             $_SESSION['user_name']=$user->user_name;
+            $_SESSION['isAdmin']=$user->isAdmin;
             $this->signed_in=true;
         }
     }
