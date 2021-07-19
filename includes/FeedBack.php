@@ -24,7 +24,7 @@
     <script src="../js/fakeLoader.min.js"></script>
 
     
-    <title>EASport - FeedBack</title>
+    <title>e-Sport - FeedBack</title>
   </head>
 
   <body>

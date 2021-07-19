@@ -1,60 +1,64 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.row{
+.row {
   margin: auto;
   width: fit-content;
 }
-.col{
+.col {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 /* כל הדף כולל רקע */
-#background{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-image: url('../images/background4.jpg');   
+#background {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("../images/background4.jpg") repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto;
 }
-#welcome{
-    font-family: Candara;
-    text-align: center;
-    text-decoration: underline 2px double;
-    width:40%;
-    margin: 0 auto;
-    font-size: 40px;
 
+#welcome {
+  font-family: Candara;
+  text-align: center;
+  text-decoration: underline 2px double;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 40px;
 }
 /* הדף עם התוכן */
-#page{
-    width: 100%;
-    margin: 0 auto;
-    border: 10px solid;
-    border-radius: 50px;
-    border-style: ridge double;
-    border-color: rgb(126, 132, 173);
-    background-image: url('../images/background.jpg');
+#page {
+  width: 100%;
+  margin: 0 auto;
+  border: 10px solid;
+  border-radius: 50px;
+  border-style: ridge double;
+  border-color: rgb(126, 132, 173);
+  background-image: url("../images/background.jpg");
 }
 /* תמונת לוגו */
-#logo{
-   margin: auto;
-   width: fit-content;
-   border: 5px solid transparent;
-   border-radius: 25%;
-   border-style:  double;
+#logo {
+  margin: auto;
+  width: fit-content;
+  border: 5px solid transparent;
+  border-radius: 25%;
+  border-style: double;
 }
 /* שורת לינקים */
-#nav{
-  border: 5px ;
+#nav {
+  border: 5px;
   border-color: rgb(126, 132, 173);
   border-radius: 10px;
   border-style: double;
 }
-#stickyNavbar{
-  background-image: url('../images/background.jpg');
+#stickyNavbar {
+  background-image: url("../images/background.jpg");
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding-top: 15px;
@@ -65,16 +69,17 @@
 }
 
 /* מכיל את מרכז הדף */
-#main,h1{
-    text-align: center;
-    padding-top: 20px;
+#main,
+h1 {
+  text-align: center;
+  padding-top: 20px;
 }
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-  }  
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -82,121 +87,138 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}  
+}
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}  
-.flip-card-front, .flip-card-back {
+}
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}  
+}
 .flip-card-back {
   color: black;
   transform: rotateY(180deg);
-  border:double 5px gray ;
+  border: double 5px gray;
   border-radius: 25px;
 }
 
-#community{
+#community {
   border-radius: 10px;
-
 }
-#community:hover{
+#community:hover {
   box-shadow: 2px 2px 10px 10px rgb(87, 85, 85);
 }
 @media screen and (max-width: 1350px) {
-  #card,#front,#back {
+  #card,
+  #front,
+  #back {
     width: 280px;
     height: 200px;
   }
 }
 @media screen and (max-width: 1250px) {
-  #card,#front,#back {
+  #card,
+  #front,
+  #back {
     width: 260px;
     height: 240px;
   }
-  
 }
 @media screen and (max-width: 1170px) {
-  #card, #front, #back {
+  #card,
+  #front,
+  #back {
     width: 200px;
     height: 240px;
   }
 }
 @media screen and (max-width: 810px) {
-  #card,#front,#back,#b1 {
+  #card,
+  #front,
+  #back,
+  #b1 {
     width: 160px;
     height: 160px;
   }
   #b1 {
-      width: 100px;
-      height: 50px;
+    width: 100px;
+    height: 50px;
   }
-  #back h1,h3   {
-      font-size: 20px;
+  #back h1,
+  h3 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 670px) {
-  #card,#front,#back,#b1 {
+  #card,
+  #front,
+  #back,
+  #b1 {
     width: 140px;
     height: 140px;
   }
   #b1 {
-      width: 100px;
-      height: 40px;
-      font-size: 14px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
   }
-  #back h1,h3   {
-      font-size: 16px;
+  #back h1,
+  h3 {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {
-  #card,#front,#back,#b1 {
+  #card,
+  #front,
+  #back,
+  #b1 {
     width: 100px;
     height: 120px;
   }
   #b1 {
-      width: 80px;
-      height: 36px;
-      font-size: 12px;
+    width: 80px;
+    height: 36px;
+    font-size: 12px;
   }
-  #back h1,h3   {
-      font-size: 12px;
+  #back h1,
+  h3 {
+    font-size: 12px;
   }
 }
 
 /* Footer */
-#footer_text{
+#footer_text {
   text-align: center;
-  font-size: 12px; 
+  font-size: 12px;
 }
-#row5{
+#row5 {
   margin: auto;
   margin-top: -2%;
   margin-bottom: -2%;
 }
-.social-menu ul{
-  position:absolute; 
+.social-menu ul {
+  position: absolute;
   transform: translate(-50%, -50%);
   display: flex;
 }
-.social-menu ul li{
-  list-style: none;   
+.social-menu ul li {
+  list-style: none;
   margin: 10px;
 }
-.social-menu ul li .fa{
+.social-menu ul li .fa {
   font-size: 25px;
   line-height: 50px;
-  transition: .6s;
+  transition: 0.6s;
   color: rgb(255, 255, 255);
 }
-.social-menu ul li .fa:hover{
+.social-menu ul li .fa:hover {
   color: rgb(10, 7, 7);
 }
-.social-menu ul li a{
+.social-menu ul li a {
   position: relative;
   display: block;
   width: 50px;
@@ -204,24 +226,24 @@
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.938);
   text-align: center;
-  transition: .6s;
-  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
-.social-menu ul li a:hover{
+.social-menu ul li a:hover {
   transform: translate(0, 5px);
 }
-.social-menu ul li:nth-child(1) a:hover{
-  background-color: #0077B5;
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #0077b5;
 }
-.social-menu ul li:nth-child(2) a:hover{
+.social-menu ul li:nth-child(2) a:hover {
   background-color: #55acee;
 }
-.social-menu ul li:nth-child(3) a:hover{
+.social-menu ul li:nth-child(3) a:hover {
   background-color: #e4405f;
 }
-.social-menu ul li:nth-child(4) a:hover{
-  background-color: #0077B5;
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #0077b5;
 }
-.social-menu ul li:nth-child(5) a:hover{
-  background-color: #25D366;
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #25d366;
 }
