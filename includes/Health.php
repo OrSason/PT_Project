@@ -22,7 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/fakeLoader.min.js"></script>
 
-    <title>EASport Official Site</title>
+    <title>e-Sport - Health</title>
   </head>
 
   <div class="myloader"></div>
