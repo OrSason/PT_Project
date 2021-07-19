@@ -68,14 +68,14 @@
 
         }
     </script>
-    <title>EASport - Login</title>
+    <title>e-Sport - Login</title>
 </head>
 
 <body>
 <section id="main">
 <form method="POST">
   <div class="imgcontainer">
-      <img class="img-fluid" src="../PT_Project/images/logo2.jpeg" alt="Avatar" width="300" height="100">
+      <img class="img-fluid" src="../PT_Project/images/logo2.png" alt="Avatar" width="200" height="100">
   </div>
 
   <div class="container">

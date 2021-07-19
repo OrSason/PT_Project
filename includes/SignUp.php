@@ -1,6 +1,6 @@
 <?php
     $DB_Host = "localhost";
-    $DB_User = "admin1234";
+    $DB_User = "admin";
     $DB_Pass = "pass1234";
     $DB_Name = "PT_project";
 
@@ -102,7 +102,7 @@
         <script src="../js/fakeLoader.min.js"></script>
 
         
-        <title>EASport - SignUp</title>
+        <title>e-Sport - SignUp</title>
     </head>
 
     <body>
@@ -111,7 +111,7 @@
                 <main class="pl-5 pr-5 mb-3 pt-3" id="main">
                     
                     <div class="row img-fluid" id="logo">
-                        <img src="../images/logo2.jpeg" class="img-fluid" alt="Logo">
+                        <img src="../images/logo2.png" class="img-fluid" alt="Logo" width="100" height="100">
                     </div>
 
                     <div class="row mb-4" id="join" style="border-bottom: double 4px;">

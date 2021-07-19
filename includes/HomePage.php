@@ -30,7 +30,7 @@
 
     </script>
 
-    <title>EASport Official Site</title>
+    <title>e-Sport Official Site</title>
     
     
   </head>
@@ -47,7 +47,16 @@
                 <canvas class="mt-1" id="canvas" width="150" height="150" style="float: left; position:absolute"></canvas>    
             </div>
           
+            <!-- <div class="row" id="logo">
+              <img src="../images/logo.png" class="img-fluid" alt="Logo" width="200" height="200">
+            </div> -->
+
             <div class="row" id="logo">
+              <div id="logo">
+                <a href="HomePage.php">
+                  <img src="../images/logo.png" class="img-fluid" alt="Logo" width="200" height="200">
+                </a>
+              </div>
             </div>
             
             <div id="welcome" style="">
