@@ -22,7 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/fakeLoader.min.js"></script>
 
-    <title>EASport Official Site</title>
+    <title>e-Sport - Health</title>
   </head>
 
   <div class="myloader"></div>
@@ -53,8 +53,14 @@
           </div>
           
           <div id="welcome" style="">
-                <?php
-                    echo "Hello " .$_SESSION['user_name'];
+                 <?php
+                    if ($_SESSION['isAdmin'] == "1") {
+                      echo "Welcome Admin " .$_SESSION['user_name']; 
+                      echo '<a href="../includes/AdminPanel.php"><input class="btn btn-outline-dark" type="button" value="Admin Panel" style="margin-left: 30px;"></a>';
+                    }
+                    else{
+                      echo "Hello " .$_SESSION['user_name'];
+                    }
                 ?>
 
                 <a href="../php/Logout.php"><input class="btn btn-outline-dark" type="button" value="logout" style="margin-left: 30px;"></a>
