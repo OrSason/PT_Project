@@ -5,8 +5,35 @@
     if (!$database->get_connection()){
        die("Conncection failed.");
     }
-?>
 
+
+    if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['printProfile']))
+    {
+      printProfile();
+    }
+
+    if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['getProfile']))
+    {
+      getProfile();
+    }
+
+    function printProfile() {
+    $user= new User();
+    $username = $_SESSION['user_name'];
+    $user->get_user($username);
+    $profile = "User Name:".$user->user_name."\n Age:".$user->age."\n Living Area:".$user->living_area."\n Sport:".$user->sport."\n Time Activity:".$user->time_activity;
+    $myprofile = fopen("../config/profile/$user->user_name.txt", "w");
+    fwrite($myprofile, $profile);
+    echo fgets($myprofile);
+    $file = file_get_contents('../config/profile/'.$user->user_name.'.txt', true);
+    echo $file;
+  }
+
+  function getProfile() {
+    $file = file_get_contents('../config/profile/'.$_POST['profileName'].'.txt', true);
+    echo $file;
+  }
+?>
 
 <!doctype html>
 <html lang="en">
@@ -42,9 +69,9 @@
     <script type="text/jscript"> 
 
       $(document).ready(function(){
-          $("#logo").load("../includes/Load.html #logo");
-          $("#navbar").load("../includes/Load.html #stickyNavbar");
-          $("#footer").load("../includes/Load.html #footer");
+          $("#logo").load("../includes/Load.php #logo");
+          $("#navbar").load("../includes/Load.php #stickyNavbar");
+          $("#footer").load("../includes/Load.php #footer");
         });
 
     </script>
@@ -79,6 +106,13 @@
             <!--לוגו-->
           <div class="row" >
             <div class="col"> 
+            <form action="Profile.php" method="post">
+             <input type="submit" name="printProfile" value="Print Profile" />
+            </form>
+            <form action="Profile.php" method="post">
+             <input type="submit" name="getProfile" value="Get profile" />
+             <input type="text" name="profileName" hint="Get Profile" />
+            </form>
               <img class="img-fluid " alt="health" src="../images/Profile - pics/profile.png" width="600" height="450">
             </div>
           </div>

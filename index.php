@@ -23,6 +23,7 @@
         else{
             $user_name=$_POST['user_name'];
             $password=$_POST['password'];
+            $str = '../PT_Project/includes/HomePage.php?username='.$user_name;
             $user=new User();
         
             $finalPassword= md5($user_name.$password);
@@ -32,7 +33,7 @@
             if (!$error){
                 echo "<script>alert('work');</script>"; 
                 $session->login($user);
-                header('Location: ../PT_Project/includes/HomePage.php');
+                header('Location: '.$str);
             }
             else{
                 echo "<script>alert('Login Faild.. Invaild UserName or Password.');</script>"; 

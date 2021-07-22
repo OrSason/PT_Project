@@ -1,6 +1,10 @@
 <?php
     require_once('../php/init.php');
    // session_start();
+
+   $username=$_GET['username'];
+   $page = $_GET['page'] ?? 'home';
+   echo file_get_contents($page);
 ?>
 
 <!doctype html>
@@ -23,9 +27,9 @@
     <script type="text/jscript"> 
 
         $(document).ready(function(){
-          $("#logo").load("../includes/Load.html #logo");
-          $("#navbar").load("../includes/Load.html #stickyNavbar");
-          $("#footer").load("../includes/Load.html #footer");
+          $("#logo").load("../includes/Load.php #logo");
+          $("#navbar").load("../includes/Load.php #stickyNavbar");
+          $("#footer").load("../includes/Load.php #footer");
         });
 
     </script>

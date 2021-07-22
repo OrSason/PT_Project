@@ -6,11 +6,12 @@ class User{
     
     private $user_name;
     private $password;
+    private $isAdmin;
     public $age;
     public $living_area;
     public $sport;
     public $time_activity;
-    private $isAdmin;
+    
     
 
     public static function fetch_users(){
@@ -50,6 +51,26 @@ class User{
         global $database;
         $error=null;                                                                                                                    
         $result=$database->query("select * from users where user_name='".$user_name."' and password='".$password."'");
+		
+        if (!$result)
+            $error='Can not find the user.  Error is:'.$database->get_connection()->error;
+        elseif ($result->num_rows>0){
+            $found_user=$result->fetch_assoc();
+			$this->instantation($found_user);
+        }
+        else
+            $error="Can no find user by this name";
+		 
+        return $error;
+        
+    }
+
+
+
+    public function get_user($user_name){
+        global $database;
+        $error=null;                                                                                                                    
+        $result=$database->query("select * from users where user_name='".$user_name."'");
 		
         if (!$result)
             $error='Can not find the user.  Error is:'.$database->get_connection()->error;

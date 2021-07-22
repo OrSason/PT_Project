@@ -1,7 +1,7 @@
 <?php
 
 $DB_Host = "localhost";
-$DB_User = "admin";
+$DB_User = "admin1234";
 $DB_Pass = "pass1234";
 $DB_Name = "PT_project";
 
@@ -27,9 +27,10 @@ $DB_Name = "PT_project";
             exit();
         }
         
-        header('Location: ../includes/HomePage.php');
+        //header('Location: ../includes/HomePage.php');
+        echo 'Thanks for your feedback '.$_POST["name"];
         ?>
-        <script>alert('Feedback uplaoded');</script>
+        <script>alert('Feedback uploaded');</script>
         <?php
 
     $conn->close();

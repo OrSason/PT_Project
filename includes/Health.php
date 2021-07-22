@@ -37,9 +37,9 @@
     <script type="text/jscript"> 
 
       $(document).ready(function(){
-          $("#logo").load("../includes/Load.html #logo");
-          $("#navbar").load("../includes/Load.html #stickyNavbar");
-          $("#footer").load("../includes/Load.html #footer");
+          $("#logo").load("../includes/Load.php #logo");
+          $("#navbar").load("../includes/Load.php #stickyNavbar");
+          $("#footer").load("../includes/Load.php #footer");
         });
 
     </script>

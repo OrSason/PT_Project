@@ -4,7 +4,7 @@ require_once('init.php');
 
 class Session{
     private $signed_in;
-    private $user_name;
+    public $user_name;
     private $isAdmin;
     
     
