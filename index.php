@@ -23,6 +23,8 @@
         else{
             $user_name=$_POST['user_name'];
             $password=$_POST['password'];
+
+
             $str = '../PT_Project/includes/HomePage.php?username='.$user_name;
             $user=new User();
         

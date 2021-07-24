@@ -3,8 +3,6 @@
    // session_start();
 
    $username=$_GET['username'];
-   $page = $_GET['page'] ?? 'home';
-   echo file_get_contents($page);
 ?>
 
 <!doctype html>

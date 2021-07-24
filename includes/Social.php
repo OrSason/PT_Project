@@ -3,6 +3,7 @@
     //session_start();
 
 
+    }
 ?>
 
 <!doctype html>
@@ -73,6 +74,8 @@
 
         <main id="main">
           <div class="row">
+
+
             <div class="col" > 
               <img class="img-fluid" alt="Social" id="Social" src="../images/Social - pics/social.jpg" width="600" height="450">
             </div>

@@ -1,5 +1,0 @@
-User Name:mor
- Age:34
- Living Area:HaSharon
- Sport:BasketBall
- Time Activity:Evening

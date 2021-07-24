@@ -1,5 +1,0 @@
-User Name:Or
- Age:45
- Living Area:HaShfela
- Sport:Tennis
- Time Activity:Noon

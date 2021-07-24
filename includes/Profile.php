@@ -1,6 +1,9 @@
 <?php
     require_once('../php/init.php');
     //session_start();
+    if(isset($_GET['page'])){
+    include($_GET['page']);
+    }
     
     if (!$database->get_connection()){
        die("Conncection failed.");
