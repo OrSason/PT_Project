@@ -1,7 +1,12 @@
 <?php
     require_once('../php/init.php');
     //session_start();
-    $username = $_POST['username']
+    
+    if(isset($_GET['page'])){
+      $username = $_POST['username'];
+      }
+
+
 ?>
 
 <!doctype html>

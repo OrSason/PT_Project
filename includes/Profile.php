@@ -4,6 +4,7 @@
     if(isset($_GET['page'])){
     include($_GET['page']);
     }
+
     
     if (!$database->get_connection()){
        die("Conncection failed.");
