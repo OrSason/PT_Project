@@ -88,7 +88,7 @@
     <div class="row" id="row6">
         <div class="col-xs">
         <p id="footer_text">
-            <br> Copyrights &copy PHP 2020 &nbsp &nbsp|&nbsp &nbsp Shay & Asaf & Eyal	
+            <br> PT_Project 2021 Or & Eyal & Asaf
         </p>
         </div>  
     </div>       
