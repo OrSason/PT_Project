@@ -34,7 +34,7 @@
   }
 
   function getProfile() {
-    $file = file_get_contents('../config/profile/'.$_POST['profileName'].'.txt', true);
+    $file = file_get_contents('../config/profile/'.$_POST['profileName'], true);
     echo $file;
   }
 ?>
@@ -117,6 +117,28 @@
              <input type="submit" name="getProfile" value="Get profile" />
              <input type="text" name="profileName" hint="Get Profile" />
             </form>
+
+                    <br><br>
+
+                    <div class="container" >
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p> :בחר את תמונת הפרופיל שלך</p><br>
+            <input type="file" name="fileToUpload" id="fileToUpload"><br>
+            <input type="submit" value="Upload Image" name="submit">
+            </form>
+              <?php
+              if(file_exists("../profilePics/".$_SESSION['user_name'].".png"))
+                      {
+                        $profilePicPath = "../profilePics/".$_SESSION['user_name'].".png";
+                        echo '<img src='.$profilePicPath.' alt="Italian Trulli width="200" height="200" "> ';
+                      
+                      }
+             
+              
+              
+              ?>
+            
+                  </div>
               <img class="img-fluid " alt="health" src="../images/Profile - pics/profile.png" width="600" height="450">
             </div>
           </div>

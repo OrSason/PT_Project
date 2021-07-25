@@ -2,3 +2,5 @@
 *.jpg
 *.png
 /images
+/profilePics
+/config/Profile/

