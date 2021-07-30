@@ -8,13 +8,13 @@
 
   This repo contains scripts for a vulnerable web application.
   This project made to demonstrate exploitation of the following vulnerabilities:
-    -	authentication 
-    -	Broken access control 
-    -	Reflected XSS 
-    -	Stored XSS 
-    -	Local file inclusion OR Directory traversal 
-    -	Remote file inclusion 
-    -	Phishing redirect 
-    -	SQL injection
-    -	Command injection
-    -	Malicious file upload
+ -	authentication 
+ -	Broken access control 
+ -	Reflected XSS 
+ -	Stored XSS 
+ -	Local file inclusion OR Directory traversal 
+ -	Remote file inclusion 
+ -	Phishing redirect 
+ -	SQL injection
+ -	Command injection
+ -	Malicious file upload
