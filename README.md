@@ -18,3 +18,5 @@
  -	SQL injection
  -	Command injection
  -	Malicious file upload
+
+Scripts used for the attacks can be found in /scripts folder
