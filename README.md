@@ -12,7 +12,7 @@
  -	Broken access control 
  -	Reflected XSS 
  -	Stored XSS 
- -	Local file inclusion OR Directory traversal 
+ -	Directory traversal 
  -	Remote file inclusion 
  -	Phishing redirect 
  -	SQL injection
